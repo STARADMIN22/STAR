@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝕊𝕋𝔸ℝ-Contraseña olvidada</title>
+    <link rel="icon" href="logo star.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="stylec_o.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('AoZCfeJWxn0Kmes0p'); // Reemplaza 'AoZCfeJWxn0Kmes0p' con tu User ID (llave pública)
+        })();
+    </script>
+</head>
+<body>
+    <div class="title">
+    <center><h1>ENVIA UN CODIGO DE RECUPERACION</h1></center>
+</div>
+    <center><button onclick="enviarCorreo()" id="btcorreo">Enviar Correo</button></center>
+
+    <script type="text/javascript">
+        function enviarCorreo() {
+            emailjs.send("ianwld2227", "template_ad4fcrm", { // Reemplaza 'template_ad4fcrm' con tu Template ID
+                to_name: "Ian Waldo",
+                message: "Este es el contenido del correo"
+            })
+            .then(function(response) {
+                console.log('Correo enviado con éxito!', response.status, response.text);
+            }, function(error) {
+                console.log('Falló el envío del correo...', error);
+            });
+        }
+    </script>
+    <br>
+
+<div class="cod_recup">
+<form>
+    <center><label for="miCajaDeTexto">Ingrese el codigo de recuperacion:</label><br>
+        <br>
+    <input type="text" id="miCajaDeTexto" name="nombre"><br>
+    <br>
+    <button type="submit">Enviar código</button>
+</center>
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+.cursor-circle {
+    position: absolute;
+    width: 500px; /* Radio del círculo */
+    height: 500px;
+    border-radius: 50%;
+    background-color: transparent; /* Fondo transparente */
+    pointer-events: none;
+    z-index: -1; /* Colocar el círculo detrás de todo lo demás */
+    background-image: radial-gradient(circle, rgba(0, 255, 0, 0.5) 10%, rgba(0, 255, 0, 0) 70%); /* Gradiente radial */
+  }
+
+.cuadro {
+    width: 360px; /* Ancho del cuadro */
+    height: 400px; /* Altura del cuadro */
+    border: 5px solid rgb(31, 34, 31); /* Borde del cuadro */
+    background-color: rgb(25, 25, 25); /* Color de fondo del cuadro */
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.cuadro h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 243, 50);
+    font-size: 35px;
+}
+.cuadro input[type="email"]{
+    padding: 4px;
+    margin: 25px;
+    width: 300px;
+    height: 25px;
+    color: white;
+    background-color: rgb(66, 56, 56);
+    border-radius:3px ;
+    border: none;
+}
+.cuadro input[type="password"]{
+    padding: 4px;
+    margin: 25px;
+    width: 300px;
+    height: 25px;
+    color: white;
+    background-color: rgb(66, 56, 56);
+    border-radius:3px ;
+    border: none;
+}
+.cuadro a{
+    padding: 4px;
+    margin: 165px;
+    color: rgb(12, 243, 50);
+    white-space: nowrap;
+}
+.cuadro button{
+    background-color: rgb(12, 243, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 270px;
+    height: 40px;
+    position: absolute;
+    top: 320px;
+    left: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.cuadrosf {
+    width: 98px; /* Ancho del cuadro */
+    height: 98px; /* Altura del cuadro */
+    background-color: rgb(14, 12, 12); /* Color de fondo del cuadro*/
+    border: 1px solid rgb(25, 25, 25); /* Borde del cuadro*/
+    transition: background-color 2s ease, border-color 3s ease; /* Agrega transiciones suaves */
+
+
+}
+.contenedorcuadrosf2 {
+    position: absolute;
+    top: 0px;
+    left: 0px; /* Cambié el valor de left a 150px para posicionarlo al lado de la primera fila */
+    display: grid;
+    grid-template-columns: repeat(13, 100px); /* Define el número de columnas y su ancho */
+    grid-gap: 4px; /* Espacio entre los cuadros */
+}
+.cuadrosf:hover {
+    background-color: rgb(13, 243, 50); /* Cambia el color de fondo al pasar el cursor sobre los cuadros */
+    border: 1px solid rgb(12, 243, 50); /* Borde del cuadro*/
+    transition: background-color 0.1s ease; /* Agrega una transición suave */
+}
+
+.titulo {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+    z-index: 9999; /* Valor alto para asegurar que esté encima de todo */
+    background-color: transparent; /* Color de fondo para destacar el texto */
+    color: rgb(12, 243, 50); /* Color del texto */
+    font-size: 60px;
+    padding: 10px; /* Espaciado alrededor del texto */
+}
+
+

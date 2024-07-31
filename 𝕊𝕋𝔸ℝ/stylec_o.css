@@ -1,0 +1,12 @@
+body{
+
+    background-color: rgb(22, 21, 21);
+}
+.title h1{
+font-size: 50px;
+color: white;
+}
+.cod_recup label {
+    font-size: 30px; /* Cambia el tamaño del texto */
+    color: white; /* Cambia el color del texto */
+}
